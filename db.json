@@ -1,0 +1,132 @@
+{
+  "coffee": [
+    {
+      "id": 1,
+      "name": "Brazil Santos",
+      "price": 2200,
+      "imgUrl": "assets/img/product/type-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Ethiopia Sidamo",
+      "price": 2250,
+      "imgUrl": "assets/img/product/type-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Colombia Supremo",
+      "price": 2400,
+      "imgUrl": "assets/img/product/type-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Burundi Jarama",
+      "price": 2650,
+      "imgUrl": "assets/img/product/type-4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Espresso Blend",
+      "price": 2100,
+      "imgUrl": "assets/img/product/type-5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Cremo Blend",
+      "price": 2350,
+      "imgUrl": "assets/img/product/type-6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Nomad Blend",
+      "price": 2250,
+      "imgUrl": "assets/img/product/type-7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "ALFA Blend",
+      "price": 2350,
+      "imgUrl": "assets/img/product/type-8.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "coffee": {
+        "id": 2,
+        "name": "Ethiopia Sidamo",
+        "price": 2250,
+        "imgUrl": "assets/img/product/type-2.jpg"
+      },
+      "totalSum": 22500,
+      "status": "Доставлен",
+      "deliverDate": "2021-10-27T18:00:00.000Z",
+      "createDate": "2021-10-17T22:08:19.347Z"
+    },
+    {
+      "id": 2,
+      "coffee": {
+        "id": 1,
+        "name": "Brazil Santos",
+        "price": 2200,
+        "imgUrl": "assets/img/product/type-1.jpg"
+      },
+      "totalSum": 44000,
+      "status": "На комплектации",
+      "deliverDate": "2021-10-30T18:00:00.000Z",
+      "createDate": "2021-10-17T22:08:41.769Z"
+    },
+    {
+      "id": 3,
+      "coffee": {
+        "id": 8,
+        "name": "ALFA Blend",
+        "price": 2350,
+        "imgUrl": "assets/img/product/type-8.jpg"
+      },
+      "totalSum": 44650,
+      "status": "На комплектации",
+      "deliverDate": "2021-10-17T22:08:47.672Z",
+      "createDate": "2021-10-17T22:08:54.727Z"
+    },
+    {
+      "id": 4,
+      "coffee": {
+        "id": 3,
+        "name": "Colombia Supremo",
+        "price": 2400,
+        "imgUrl": "assets/img/product/type-3.jpg"
+      },
+      "totalSum": 9600,
+      "status": "В обработке",
+      "deliverDate": "2021-10-25T18:00:00.000Z",
+      "createDate": "2021-10-18T14:56:44.877Z"
+    },
+    {
+      "id": 5,
+      "coffee": {
+        "id": 2,
+        "name": "Ethiopia Sidamo",
+        "price": 2250,
+        "imgUrl": "assets/img/product/type-2.jpg"
+      },
+      "totalSum": 27000,
+      "status": "Отправлен",
+      "deliverDate": "2021-10-27T18:00:00.000Z",
+      "createDate": "2021-10-18T15:17:09.509Z"
+    },
+    {
+      "id": 6,
+      "coffee": {
+        "id": 3,
+        "name": "Colombia Supremo",
+        "price": 2400,
+        "imgUrl": "assets/img/product/type-3.jpg"
+      },
+      "totalSum": 2400,
+      "status": "Отправлен",
+      "deliverDate": "2021-10-18T16:18:36.550Z",
+      "createDate": "2021-10-18T16:18:40.087Z"
+    }
+  ]
+}

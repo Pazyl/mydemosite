@@ -1,0 +1,65 @@
+<main xmlns="http://www.w3.org/1999/html">
+  <div class="check-order-box">
+
+    <div class="order-id-input-box">
+
+      <mat-form-field class="example-form-field" appearance="fill">
+        <mat-label>Номер заказа</mat-label>
+        <input matInput type="text" [(ngModel)]="orderId">
+        <button *ngIf="orderId" matSuffix mat-icon-button aria-label="Clear" (click)="clearOrderId()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <button mat-flat-button class="btn-get-by-id" (click)="getOrder()">Поиск</button>
+
+    </div>
+
+    <div *ngIf="order" class="info-table">
+      <table class="styled-table">
+        <thead>
+        <tr>
+          <th colspan="2" style="text-align: center">Информация о заказах</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+          <td class="row-bold">ID заказа:</td>
+          <td>{{order.id}}</td>
+        </tr>
+        <tr>
+          <td class="row-bold">Статус заказа:</td>
+          <td>{{order.status}}</td>
+        </tr>
+        <tr>
+          <td class="row-bold">Сумма к оплате:</td>
+          <td>{{order.totalSum}} тг.</td>
+        </tr>
+        <tr>
+          <td class="row-bold">Тип кофе:</td>
+          <td>{{order.coffee?.name}}</td>
+        </tr>
+        <tr>
+          <td class="row-bold">Дата оформления:</td>
+          <td>{{order.createDate | date:'dd-MM-yyyy (hh:mm a)'}}</td>
+        </tr>
+        <tr>
+          <td class="row-bold">Дата доставки:</td>
+          <td>{{order.deliverDate | date:'dd-MM-yyyy (hh:mm a)'}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div *ngIf="hasError" class="info-table">
+      <table class="styled-table">
+        <thead>
+        <tr>
+          <th colspan="2" style="text-align: center">Заказ не найден!</th>
+        </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+</main>

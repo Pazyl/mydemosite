@@ -1,0 +1,73 @@
+main {
+  width: 100%;
+}
+
+.store-box {
+  margin: 0 auto;
+  width: 1400px;
+  box-sizing: border-box;
+}
+
+.flex-div {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.coffee-card {
+  margin: 10px;
+
+  .card-image {
+    width: 300px;
+
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  .card-title {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      width: 250px;
+      text-align: center;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 1.35;
+      cursor: pointer;
+    }
+  }
+
+  .card-price {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      width: 250px;
+      text-align: center;
+      font-size: 23px;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+  }
+
+  .action-btns {
+    text-align: center;
+
+    button {
+      margin-top: 25px;
+      background: #ff9e1f;
+      color: black;
+      padding: 5px 30px;
+      border-radius: 15px;
+    }
+  }
+}

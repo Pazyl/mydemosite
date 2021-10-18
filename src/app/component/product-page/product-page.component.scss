@@ -1,0 +1,100 @@
+.product-box {
+  width: 1400px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.product-content {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .part-left {
+    width: 48%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .part-right {
+    width: 48%;
+
+    .product-name {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .product-price {
+      margin-top: 30px;
+      font-size: 20px;
+      line-height: 1.35;
+      font-weight: 600;
+    }
+
+    .product-mass {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+
+      .item {
+        min-width: 50px;
+        cursor: pointer;
+        margin-right: 20px;
+        padding: 5px 10px;
+        color: #777;
+        border: 1px solid #777;
+        text-align: center;
+      }
+    }
+
+    .calculate {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+
+      .btn-cal {
+        width: 10px;
+        height: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #000;
+        cursor: pointer;
+      }
+
+      .product-count {
+        margin: 0 15px;
+      }
+    }
+  }
+}
+
+.buy-btn {
+  button {
+    margin-top: 25px;
+    background: #ff9e1f;
+    color: black;
+    padding: 5px 30px;
+    border-radius: 15px;
+  }
+}
+
+.selected {
+  color: #000 !important;
+  border: 2px solid #000 !important;
+}
+
+.total-sum {
+  margin-top: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.date-deliver {
+  margin-top: 30px;
+}

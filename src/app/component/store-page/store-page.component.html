@@ -1,0 +1,33 @@
+<main>
+  <div class="store-box">
+
+    <div class="flex-div">
+
+      <div class="coffee-card" *ngFor="let coffee of coffees" [routerLink]="['/product', coffee.id]">
+
+        <div class="card-image">
+          <img src="{{coffee.imgUrl}}" alt="product image">
+        </div>
+
+        <div class="card-title">
+          <span>
+            {{coffee.name}}
+          </span>
+        </div>
+
+        <div class="card-price">
+          <span>
+            {{coffee.price}} тг.
+          </span>
+        </div>
+
+        <div class="action-btns">
+          <button mat-button>Купить</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</main>

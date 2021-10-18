@@ -1,0 +1,47 @@
+<main>
+  <div class="product-box">
+
+    <div class="product-content">
+
+      <div class="part-left">
+        <img [src]="coffee?.imgUrl" alt="Product image ">
+      </div>
+
+      <div class="part-right">
+        <h1 class="product-name" style="color: #ffbf0f">{{coffee?.name}}</h1>
+
+        <span class="product-price">Цена: {{initPrice}} тг.</span>
+
+        <div class="product-mass">
+          <div class="item" [ngClass]="{'selected': mass == 200}" (click)="setMass(200)">200 гр</div>
+          <div class="item" [ngClass]="{'selected': mass == 400}" (click)="setMass(400)">400 гр</div>
+          <div class="item" [ngClass]="{'selected': mass == 1000}" (click)="setMass(1000)">1000 гр</div>
+        </div>
+        <div class="calculate">
+          <div (click)="dec()" class="btn-cal">-</div>
+          <div class="product-count">{{count}}</div>
+          <div (click)="inc()" class="btn-cal">+</div>
+        </div>
+
+        <div class="total-sum">Сумма: {{totalSum}} тг.</div>
+
+        <div class="date-deliver">
+          <mat-form-field appearance="fill">
+            <mat-label>Choose a date</mat-label>
+            <!-- #docregion toggle -->
+            <input matInput [matDatepicker]="picker" [(ngModel)]="dateDeliver">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <!-- #enddocregion toggle -->
+          </mat-form-field>
+        </div>
+
+        <div class="buy-btn">
+          <button mat-button (click)="buy()">Купить</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
